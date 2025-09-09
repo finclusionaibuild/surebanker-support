@@ -3910,19 +3910,4 @@ const SupportDashboard = (): JSX.Element => {
           </nav>
         </div>
 
-        {/* Main Content */}
-        <div className="flex-1 ml-64 p-6">
-          {renderPageContent()}
-        </div>
-      </div>
-
-      {/* Modals */}
-      {renderModal()}
-
-      {/* Success Notification */}
-      {renderSuccessNotification()}
-    </div>
-  );
-};
-
 export default SupportDashboard;
