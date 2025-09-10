@@ -104,7 +104,6 @@ const SupportDashboard = (): JSX.Element => {
       subject: "Unable to transfer funds", 
       priority: "High", 
       status: "Open",
-  BarChart3Icon,
       created: "2024-01-15 14:30",
       assignedTo: "Mike Support"
     },
@@ -3909,9 +3908,20 @@ const SupportDashboard = (): JSX.Element => {
             </div>
           </nav>
         </div>
-      </div>
-    </div>
 
+        {/* Main Content */}
+        <div className="ml-64 flex-1 p-6">
+          {renderPageContent()}
+        </div>
+      </div>
+
+      {/* Modal */}
+      {renderModal()}
+
+      {/* Success Notification */}
+      {renderSuccessNotification()}
+    </div>
+  );
 };
 
 export default SupportDashboard;
