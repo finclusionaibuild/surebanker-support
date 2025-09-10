@@ -3909,5 +3909,9 @@ const SupportDashboard = (): JSX.Element => {
             </div>
           </nav>
         </div>
+      </div>
+    </div>
+
+};
 
 export default SupportDashboard;
